@@ -1,0 +1,60 @@
+.class__container {
+    display: flex;
+    background-color: #1a1a1a;
+    align-items: center;
+    padding: 200px 20px;
+  }
+  
+  .class__image {
+    position: relative; /* Enable absolute positioning for child elements */
+  }
+  .class__img-1 {
+    width: 100%; /* Full width for the first image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .class__image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .class__content h2 span{
+    color: orange;
+  }
+  .class__content {
+    color: white;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .class__content h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .class__content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .class__content .btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .class__container {
+      flex-direction: column;
+    }
+  
+    .class__image,
+    .class__content {
+      width: 100%;
+    }
+  }

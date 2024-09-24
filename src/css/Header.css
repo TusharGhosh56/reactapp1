@@ -1,0 +1,43 @@
+.header__container {
+    position: relative;
+    background-color: #1a1a1a;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__content {
+    text-align: center;
+    color: white;
+  }
+  
+  .header__content h1 span {
+    color: #f39c12;
+  }
+  
+  .header__content h1 {
+    font-size: 3.5rem;
+    margin: 20px 0;
+  }
+  
+  .header__content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .header__content .btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .header__image {
+    display: none;
+  }
+  

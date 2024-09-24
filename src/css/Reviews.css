@@ -1,0 +1,28 @@
+.review__container {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+  
+  .review__container h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .review__container p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 20px;
+  }
+  
+  .review__container h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  .review__position {
+    font-size: 1rem;
+    color: #f39c12;
+  }
+  

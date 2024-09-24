@@ -1,0 +1,130 @@
+/* Set the overall page background to black */
+.login-page {
+    background-color: #1a1a1a;
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column; /* Stack text and form vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling for the text section */
+.login-text {
+    text-align: center;
+    color: white; /* White text for visibility */
+    margin-bottom: 40px; /* Space between text and form */
+}
+
+.login-text h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.login-text span{
+    color: orange;
+}
+.login-text p {
+    font-size: 18px;
+}
+
+/* Style for the form container */
+.login-container {
+    background-color: white; /* White form container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Style for form elements */
+.login-container h2 {
+    color: black; /* Black text for the title */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+    padding-left: 30px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button style */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333; /* Dark button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
+
+/* Style for links or additional text */
+.login-container p {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container a {
+    color: #f39c12; /* Bright color for links */
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Input group container */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative; /* Ensures input group aligns with icons */
+}
+
+/* Icon styling */
+.input-icon .icon {
+    position: absolute;
+    left: 10px;
+    top: 10%;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 16px;
+}
+
+/* Input field with icon padding */
+.input-icon input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Extra padding on the left to make space for the icon */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Adjust input label for better alignment */
+.login-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+}

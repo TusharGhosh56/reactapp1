@@ -1,0 +1,34 @@
+footer {
+  background-color: #333; /* Dark background for footer */
+  color: white; /* White text color */
+  text-align: center; /* Center text alignment */
+  padding: 20px; /* Padding around footer */
+  position: relative; /* Ensure footer stays at the bottom */
+  margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+footer img {
+  height: 50px; /* Set height for the logo */
+  margin-bottom: 10px; /* Spacing below the logo */
+}
+
+footer p {
+  margin: 5px 0; /* Top and bottom margins for paragraphs */
+  font-size: 14px; /* Font size for paragraph text */
+  color: #bbb; /* Light gray color for text */
+}
+
+.footer__socials {
+  margin: 10px 0; /* Margin above and below the social links */
+}
+
+.footer__socials a {
+  color: #f0a500; /* Color for social icons */
+  margin: 0 10px; /* Spacing between social icons */
+  font-size: 20px; /* Size of FontAwesome icons */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.footer__socials a:hover {
+  color: #db8a00; /* Darker color on hover */
+}

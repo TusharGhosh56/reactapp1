@@ -1,0 +1,229 @@
+/* Basic resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; /* Make sure html and body take full height */
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 130px;
+}
+
+.nav__logo img {
+    height: 50px;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links .link {
+    margin-left: 20px;
+}
+
+.nav__links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav__links a:hover {
+    text-decoration: underline;
+}
+
+.programs__container {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+}
+
+/* Programs header styles */
+.programs__header-container {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 100px; /* Add padding to avoid text sticking to edges */
+}
+
+.programs__header-content h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 10px;
+}
+
+.programs__header-content h1 {
+    font-size: 50px;
+    color:white;
+}
+.programs__header-content h1 span {
+    font-size: 50px;
+    color:orange;
+}
+/* Programs section styles */
+.programs__section-container {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow this section to grow and fill the available space */
+}
+
+.programs__section-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Carousel container */
+.programs__carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+/* Carousel wrapper */
+.programs__carousel {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition effect */
+    width: 100%; /* Carousel takes full width */
+}
+
+/* Each slide in the carousel */
+.programs__carousel-slide {
+    flex: 0 0 100%; /* Each slide takes full width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: 100%; /* Slide takes full height */
+}
+
+.programs__carousel-slide img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures image covers the available space nicely */
+}
+
+/* Arrow controls */
+/* Arrow controls */
+.programs__carousel-arrow {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for the height of the button */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Arrow color */
+    border: none; /* No border */
+    padding: 10px; /* Padding around the arrow */
+    cursor: pointer; /* Cursor change on hover */
+    z-index: 1; /* Ensure arrows are on top */
+    font-size: 24px; /* Arrow size */
+    border-radius: 50%; /* Optional: round edges for buttons */
+}
+.programs__carousel-arrow.left {
+    left: 10px; /* Position on the left */
+}
+
+.programs__carousel-arrow.right {
+    right: 10px; /* Position on the right */
+}
+
+/* Hover effect for arrow controls */
+.programs__carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darkens on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .programs__carousel-container {
+        height: 40vh; /* Reduce height for smaller screens */
+    }
+
+    .programs__carousel-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+}
+
+/* Programs card styles */
+.programs__grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 10px; /* Space between cards */
+}
+
+.programs__card {
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    background-color: white; /* Set a fixed width for the cards */
+    max-width: 100%; /* Ensure they don't overflow their container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s; /* Smooth transition effect */
+}
+
+.programs__card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.programs__card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.programs__card p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Button styles */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+.programs__footer-container {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.programs__footer-socials a {
+    margin: 0 10px;
+    color: white;
+}
+
+.programs__footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}

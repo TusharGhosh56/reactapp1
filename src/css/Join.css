@@ -1,0 +1,72 @@
+.join__container {
+  text-align: center;
+  padding: 0px 20px;
+  background-color: #1a1a1a; /* Container color */
+}
+.section__subheader{
+  padding-bottom: 40px;
+}
+
+.join__container h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.join__container p {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.join__image {
+  position: relative;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.join__image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.join__grid {
+  display: flex;
+  justify-content: space-between; /* No space between cards */
+  margin-top: -50px; /* Adjust for overlap */
+}
+
+.join__card {
+  background-color: orange; /* Card color */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px; /* Pushes the cards up for overlap */
+  flex: 1; /* Allow cards to grow equally */
+}
+
+.join__card span {
+  font-size: 24px;
+  color: #ffffff; /* Change icon color for better visibility */
+}
+
+.join__card h4 {
+  margin: 15px 0;
+  color: white; /* Change text color for better visibility */
+}
+
+.join__card p {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .join__grid {
+    flex-direction: column;
+    gap: 0; /* Remove gap on smaller screens */
+  }
+}
+
+.join__container span{
+  color: orange;
+}

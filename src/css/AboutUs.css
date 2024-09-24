@@ -1,0 +1,121 @@
+/* General styling */
+body {
+  background-color: #1a1a1a;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff; /* White text for better contrast */
+  display: flex; /* Make body a flex container */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Ensure it takes at least full viewport height */
+}
+
+/* About Us Page Container */
+.about-us {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1; /* Allow the about-us container to grow and fill the space */
+}
+.about-us section span{
+  color: orange;
+}
+/* Main Section Styling */
+.main {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Intro Section */
+.intro h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+/* Offerings Section */
+.offerings h2, .mission h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.offerings ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 40px auto;
+  max-width: 500px;
+}
+
+.offerings ul li {
+  background: #2e2e2e;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Mission Section */
+.mission p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+/* Map Container Styling */
+.leaflet-container {
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Styling */
+.footer1 {
+  background-color: #000000;
+  padding: 30px;
+  text-align: center;
+  position: relative; /* Ensure it doesn't overlap */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Full width */
+}
+
+.programs__footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.programs__footer-socials {
+  text-align: left;
+}
+
+.programs__footer-socials p {
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.programs__footer-socials a {
+  color: #f0a500;
+  margin-right: 10px;
+}
+
+.programs__footer-links a {
+  color: #f0a500;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.programs__footer-links a:hover {
+  text-decoration: underline;
+}

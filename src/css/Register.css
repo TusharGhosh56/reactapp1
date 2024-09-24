@@ -1,0 +1,96 @@
+body {
+  background-color: #1a1a1a;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.register__container {
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  background-color: #212121;
+}
+
+.register__form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 350px;
+}
+.register__heading {
+  color: #ffffff; /* Set to a dark color for contrast */
+  margin-bottom: 20px; /* Add spacing below the heading */
+  font-size: 50px; /* Adjust font size as needed */
+}
+.register__heading span{
+  color: orange;
+}
+h2 {
+  color: #000000;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.input__group {
+  margin-bottom: 25px; /* More spacing between input groups */
+  text-align: left;
+}
+
+.input__group label {
+  color: #000000; /* Black label text */
+  font-size: 14px;
+  margin-bottom: 10px; /* Increased margin between label and input */
+  display: inline-block;
+}
+
+.input__group input {
+  width: 100%;
+  padding: 12px; /* Increased padding inside the input fields */
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff; /* White background for input */
+  color: #000000; /* Black input text */
+  margin-top: 5px; /* Space between label and input field */
+}
+
+.btn__register {
+  background-color: #f0a500;
+  color: #fff;
+  padding: 12px 15px; /* More padding inside the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px; /* Adds spacing between the input and the button */
+}
+
+.btn__register:hover {
+  background-color: #db8a00;
+}
+
+p {
+  color: white;
+  margin-top: 25px; /* Increased spacing above paragraph */
+}
+
+p a {
+  color: #f0a500;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #ff4c4c;
+  margin-bottom: 20px;
+}
