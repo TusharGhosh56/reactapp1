@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import '../css/Header.css';
-
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
           Unleash your potential and embark on a journey towards a stronger, fitter, and more confident you.
         </p>
         <button className="btn">
-          <a href="/login" style={{ color: "#333" }}>Get Started</a>
+          <Link to="/programs" style={{ color: "#333", textDecoration: "none" }}>Get Started</Link> {/* Use Link for navigation */}
         </button>
       </div>
       <div className="header__image"></div>
