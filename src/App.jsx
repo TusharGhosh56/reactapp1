@@ -16,6 +16,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Register from './components/Register';
 import AboutUs from './components/AboutUs';
 import 'leaflet/dist/leaflet.css';
+import Appointments from './components/Appointments'; // Import Appointments
+import LoginTrainer from './components/LoginTrainer';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,7 +53,9 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/about" element={<AboutUs />} /> {/* Route to AboutUs */}
+          <Route path="/about" element={<AboutUs />} /> 
+          <Route path="/appointments" element={<Appointments />} /> 
+          <Route path="/logintrainer" element={<LoginTrainer />} />
         </Routes>
         
         <Footer />

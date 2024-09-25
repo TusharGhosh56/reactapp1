@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios'; // Import Axios for making API requests
 import '../css/Register.css';
 
 const Register = () => {
@@ -7,13 +8,14 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   const validateEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
     return emailPattern.test(email);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!name) {
       setError('Name is required.');
@@ -35,14 +37,34 @@ const Register = () => {
       return;
     }
 
-    // Clear the error and proceed with registration logic
+    // Clear the error before the request
     setError('');
-    alert("Registration successful!");
+
+    try {
+      // Send POST request to the backend API
+      const response = await axios.post('http://localhost:5000/api/register', {
+        name,
+        email,
+        password,
+      });
+
+      // If successful, show success message
+      setSuccess('Registration successful!');
+      console.log(response.data);
+      // Optionally reset the form fields
+      setName('');
+      setEmail('');
+      setPassword('');
+      setConfirmPassword('');
+    } catch (error) {
+      setError('Registration failed. Please try again.');
+      console.error('Error registering user:', error);
+    }
   };
 
   return (
     <div className="register__container">
-      <h2 className="register__heading"><span>Register</span> as user</h2> {/* Moved outside the form */}
+      <h2 className="register__heading"><span>Register</span> as user</h2>
       <div className="register__form">
         <form onSubmit={handleSubmit}>
           <div className="input__group">
@@ -86,6 +108,7 @@ const Register = () => {
             />
           </div>
           {error && <p className="error">{error}</p>}
+          {success && <p className="success">{success}</p>} {/* Display success message */}
           <button type="submit" className="btn__register">Register</button>
         </form>
         <p>

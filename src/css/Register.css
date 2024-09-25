@@ -14,7 +14,9 @@ body {
   padding: 20px;
   background-color: #212121;
 }
-
+.register__container p{
+  color: #000000;
+}
 .register__form {
   background-color: #ffffff;
   padding: 40px;
