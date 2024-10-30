@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 
-=======
 /* General Navbar Styling */
->>>>>>> daaefa52a629021b5137008904b68a7f523af6a9
 nav {
   display: flex;
   align-items: center;
@@ -12,18 +9,16 @@ nav {
   color: white;
 }
 
-<<<<<<< HEAD
 .nav__logo img {
   height: 50px;
-=======
 .hamburger {
   display: block;
   padding: 10px;
 }
+}
 
 .nav__logo {
   margin-right: auto; /* Ensure the logo stays aligned to the left */
->>>>>>> daaefa52a629021b5137008904b68a7f523af6a9
 }
 
 .nav__menu {
@@ -53,7 +48,6 @@ nav {
   color: white;
 }
 
-<<<<<<< HEAD
 .hamburger {
   font-size: 1.5rem;
   cursor: pointer;
@@ -88,11 +82,11 @@ nav {
 
 .sidebar a:hover {
   background-color: rgba(255, 255, 255, 0.1);
-=======
 /* User Profile Dropdown Styling */
 .nav__profile-dropdown {
   position: relative;
-}
+}}
+
 
 .profile-icon {
   height: 40px;
@@ -295,5 +289,4 @@ nav {
   .nav__menu.active {
     display: flex;
   }
->>>>>>> daaefa52a629021b5137008904b68a7f523af6a9
 }
