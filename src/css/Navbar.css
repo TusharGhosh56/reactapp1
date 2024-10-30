@@ -120,7 +120,7 @@ nav {
   color: white;
 }
 
-/* Responsive Settings */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -137,87 +137,86 @@ nav {
     background-color: black;
     padding: 10px;
     border-radius: 5px;
-    z-index: 10;/* General Navbar Styling */
+    z-index: 10;
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #1a1a1a; /* Darker background for better contrast */
+      background-color: #1a1a1a; 
       padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
       position: relative;
       z-index: 10;
     }
     
-    /* Hamburger icon for mobile */
+    
     .hamburger {
-      display: none; /* Hidden by default, shown on smaller screens */
+      display: none; 
       padding: 10px;
     }
     
-    /* Logo Alignment */
+   
     .nav__logo {
-      margin-right: auto; /* Ensure the logo stays aligned to the left */
+      margin-right: auto; 
     }
     
-    /* Main menu styling */
+
     .nav__menu {
       display: flex;
-      gap: 20px; /* Space between each menu item */
-      align-items: center; /* Center items vertically */
+      gap: 20px; 
+      align-items: center; 
     }
     
     .nav__menu a {
       color: white;
       text-decoration: none;
-      padding: 10px 15px; /* Add padding to improve clickable area */
-      border-radius: 5px; /* Rounded corners for a modern look */
-      transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+      padding: 10px 15px; 
+      border-radius: 5px; 
+      transition: background-color 0.3s ease, color 0.3s ease; 
     }
     
     .nav__menu a:hover {
-      background-color: #f39c12; /* Orange background on hover */
-      color: black; /* Change text color on hover for contrast */
+      background-color: #f39c12; 
+      color: black; 
     }
     
-    /* Dropdown container relative to its parent */
+    
     .nav__dropdown {
       position: relative;
     }
     
-    /* Dropdown menu absolute positioning */
+    
     .dropdown__menu {
       position: absolute;
-      top: 100%; /* Position it directly below the Login link */
-      left: 0; /* Align to the left */
+      top: 100%;
+      left: 0; 
       background-color: white;
       display: flex;
       flex-direction: column;
       min-width: 150px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
-      z-index: 100; /* Ensure dropdown appears above other content */
+      z-index: 100; 
     }
     
-    /* Dropdown link styling */
+    
     .dropdown__menu a {
       padding: 10px;
       color: black;
       text-decoration: none;
       font-weight: normal;
-      transition: background-color 0.3s ease; /* Smooth transition */
+      transition: background-color 0.3s ease; 
     }
     
     .dropdown__menu a:hover {
-      background-color: #f39c12; /* Highlight on hover */
-      color: white; /* Change text color for contrast */
+      background-color: #f39c12; 
+      color: white;
     }
     
-    /* User Profile Dropdown Styling */
     .nav__profile-dropdown {
       position: relative;
-      display: flex; /* Align profile items */
-      align-items: center; /* Center items vertically */
+      display: flex; 
+      align-items: center; 
     }
     
     .profile-icon {
@@ -225,12 +224,12 @@ nav {
       width: 40px;
       border-radius: 50%;
       cursor: pointer;
-      margin-left: 20px; /* Space between profile icon and other items */
-      transition: transform 0.2s; /* Smooth transition for hover effect */
+      margin-left: 20px; 
+      transition: transform 0.2s; 
     }
     
     .profile-icon:hover {
-      transform: scale(1.1); /* Slightly enlarge on hover */
+      transform: scale(1.1); 
     }
     
     .profile__dropdown-menu {
