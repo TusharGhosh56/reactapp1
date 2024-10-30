@@ -41,7 +41,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <Link to="/profile">Profile</Link>
+          <Link to="/UserProfile">Profile</Link>
         </div>
 
         
