@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import '../css/Navbar.css';
 import FitnessLogo from './logo.png';
-import Sidebar from './Sidebar'; 
+import Sidebar from './Sidebar';
+import UserProfilePic from './program1.jpg'; // Assuming a placeholder image for the user profile
 
 const Navbar = () => {
   const [isDropdownActive, setDropdownActive] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
-    setShowSidebar(prev => !prev); 
+    setShowSidebar(prev => !prev);
   };
 
   const handleDropdownHover = (status) => {
@@ -41,16 +42,18 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <Link to="/UserProfile">Profile</Link>
+
+          {/* Profile Picture Link */}
+          <Link to="/UserProfile" className="nav__profile">
+            <img src={UserProfilePic} alt="User Profile" style={{ height: '32px', borderRadius: '60%' }} />
+          </Link>
         </div>
 
-        
         <div className="hamburger" onClick={toggleSidebar}>
           <i className={`fas ${showSidebar ? 'fa-times' : 'fa-bars'}`}></i>
         </div>
       </nav>
 
-      
       <Sidebar isActive={showSidebar} />
     </>
   );
