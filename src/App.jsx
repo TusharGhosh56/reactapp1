@@ -18,8 +18,13 @@ import AboutUs from './components/AboutUs';
 import 'leaflet/dist/leaflet.css';
 import Appointments from './components/Appointments'; 
 import LoginTrainer from './components/LoginTrainer';
+<<<<<<< HEAD
 import Sidebar from './components/Sidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+=======
+import UserProfile from "./components/UserProfile";
+
+>>>>>>> daaefa52a629021b5137008904b68a7f523af6a9
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,6 +65,8 @@ function App() {
           <Route path="/about" element={<AboutUs />} /> 
           <Route path="/appointments" element={<Appointments />} /> 
           <Route path="/logintrainer" element={<LoginTrainer />} />
+          <Route path="/userProfile" element={<UserProfile />} /> 
+  
         </Routes>
         
         <Footer />
