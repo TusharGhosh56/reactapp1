@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/Join.css';
-import join__image from './join.jpg'; // Import the first image
+import join__image from './join.jpg'; 
 
 
 const Join = () => {

@@ -16,8 +16,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Register from './components/Register';
 import AboutUs from './components/AboutUs';
 import 'leaflet/dist/leaflet.css';
-import Appointments from './components/Appointments'; // Import Appointments
+import Appointments from './components/Appointments'; 
 import LoginTrainer from './components/LoginTrainer';
+import Sidebar from './components/Sidebar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,6 +38,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
+        <Sidebar />
         <Routes>
           <Route 
             path="/" 
@@ -47,6 +50,7 @@ function App() {
                 <Join />
                 <Pricing />
                 <Reviews />
+                
               </>
             } 
           />
