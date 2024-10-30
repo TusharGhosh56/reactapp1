@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../css/UserProfile.css';
 
 const UserProfile = () => {
   const user = {
@@ -29,7 +29,7 @@ const UserProfile = () => {
   ];
 
   return (
-    <div className="about-us">
+    <div className="user-profile">
       {/* Main Intro Section */}
       <section className="intro main">
         <h1>About <span>{user.name}</span></h1>
