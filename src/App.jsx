@@ -40,7 +40,6 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Sidebar />
         <Routes>
           <Route 
             path="/" 

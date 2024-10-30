@@ -52,6 +52,7 @@ nav {
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
+  padding-left: 10px;
 }
 
 
@@ -150,10 +151,7 @@ nav {
     }
     
     
-    .hamburger {
-      display: none; 
-      padding: 10px;
-    }
+    
     
    
     .nav__logo {
@@ -245,41 +243,42 @@ nav {
       z-index: 100;
     }
     
-    /* Profile dropdown link styling */
+    
     .profile__dropdown-menu a {
       padding: 10px;
       color: black;
       text-decoration: none;
       font-weight: normal;
-      transition: background-color 0.3s ease; /* Smooth transition */
+      transition: background-color 0.3s ease; 
     }
     
     .profile__dropdown-menu a:hover {
-      background-color: #f39c12; /* Highlight on hover */
-      color: white; /* Change text color for contrast */
+      background-color: #f39c12; 
+      color: white; 
     }
     
-    /* Responsive Settings */
+  
     @media (max-width: 768px) {
       .hamburger {
-        display: block; /* Show hamburger icon on smaller screens */
+        display: block; 
       }
     
       .nav__menu {
-        display: none; /* Hide the menu by default on small screens */
+        display: none; 
         flex-direction: column;
         gap: 10px;
         position: absolute;
         top: 60px;
+        padding-right: 10px;
         right: 20px;
-        background-color: #1a1a1a; /* Match background with navbar */
+        background-color: #1a1a1a; 
         padding: 10px;
         border-radius: 5px;
         z-index: 10;
       }
     
       .nav__menu.active {
-        display: flex; /* Show the menu when active */
+        display: flex; 
       }
     }
     
