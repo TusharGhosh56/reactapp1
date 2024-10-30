@@ -1,3 +1,4 @@
+/* General Navbar Styling */
 nav {
   display: flex;
   justify-content: space-between;
@@ -7,10 +8,12 @@ nav {
   position: relative;
   z-index: 10;
 }
-.hamburger{
+
+.hamburger {
   display: block;
   padding: 10px;
 }
+
 .nav__logo {
   margin-right: auto; /* Ensure the logo stays aligned to the left */
 }
@@ -62,27 +65,210 @@ nav {
   color: white;
 }
 
-/* Responsive settings */
+/* User Profile Dropdown Styling */
+.nav__profile-dropdown {
+  position: relative;
+}
+
+.profile-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.profile__dropdown-menu a {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.profile__dropdown-menu a:hover {
+  background-color: #f39c12;
+  color: white;
+}
+
+/* Responsive Settings */
 @media (max-width: 768px) {
   .hamburger {
-      display: block;
-      padding: 10px;
+    display: block;
+    padding: 10px;
   }
 
   .nav__menu {
-      display: none;
-      flex-direction: column;
-      gap: 10px;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      background-color: black;
-      padding: 10px;
-      border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;/* General Navbar Styling */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a1a; /* Darker background for better contrast */
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+      position: relative;
       z-index: 10;
+    }
+    
+    /* Hamburger icon for mobile */
+    .hamburger {
+      display: none; /* Hidden by default, shown on smaller screens */
+      padding: 10px;
+    }
+    
+    /* Logo Alignment */
+    .nav__logo {
+      margin-right: auto; /* Ensure the logo stays aligned to the left */
+    }
+    
+    /* Main menu styling */
+    .nav__menu {
+      display: flex;
+      gap: 20px; /* Space between each menu item */
+      align-items: center; /* Center items vertically */
+    }
+    
+    .nav__menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px; /* Add padding to improve clickable area */
+      border-radius: 5px; /* Rounded corners for a modern look */
+      transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    }
+    
+    .nav__menu a:hover {
+      background-color: #f39c12; /* Orange background on hover */
+      color: black; /* Change text color on hover for contrast */
+    }
+    
+    /* Dropdown container relative to its parent */
+    .nav__dropdown {
+      position: relative;
+    }
+    
+    /* Dropdown menu absolute positioning */
+    .dropdown__menu {
+      position: absolute;
+      top: 100%; /* Position it directly below the Login link */
+      left: 0; /* Align to the left */
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      min-width: 150px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      z-index: 100; /* Ensure dropdown appears above other content */
+    }
+    
+    /* Dropdown link styling */
+    .dropdown__menu a {
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+      font-weight: normal;
+      transition: background-color 0.3s ease; /* Smooth transition */
+    }
+    
+    .dropdown__menu a:hover {
+      background-color: #f39c12; /* Highlight on hover */
+      color: white; /* Change text color for contrast */
+    }
+    
+    /* User Profile Dropdown Styling */
+    .nav__profile-dropdown {
+      position: relative;
+      display: flex; /* Align profile items */
+      align-items: center; /* Center items vertically */
+    }
+    
+    .profile-icon {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-left: 20px; /* Space between profile icon and other items */
+      transition: transform 0.2s; /* Smooth transition for hover effect */
+    }
+    
+    .profile-icon:hover {
+      transform: scale(1.1); /* Slightly enlarge on hover */
+    }
+    
+    .profile__dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      min-width: 150px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      z-index: 100;
+    }
+    
+    /* Profile dropdown link styling */
+    .profile__dropdown-menu a {
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+      font-weight: normal;
+      transition: background-color 0.3s ease; /* Smooth transition */
+    }
+    
+    .profile__dropdown-menu a:hover {
+      background-color: #f39c12; /* Highlight on hover */
+      color: white; /* Change text color for contrast */
+    }
+    
+    /* Responsive Settings */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block; /* Show hamburger icon on smaller screens */
+      }
+    
+      .nav__menu {
+        display: none; /* Hide the menu by default on small screens */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1a1a1a; /* Match background with navbar */
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 10;
+      }
+    
+      .nav__menu.active {
+        display: flex; /* Show the menu when active */
+      }
+    }
+    
   }
 
   .nav__menu.active {
-      display: flex;
+    display: flex;
   }
 }
